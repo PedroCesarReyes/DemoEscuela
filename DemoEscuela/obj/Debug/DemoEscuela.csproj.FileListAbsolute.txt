@@ -1,0 +1,17 @@
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\EscuelaDB.mdf
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\EscuelaDB_log.ldf
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\DemoEscuela.exe.config
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\DemoEscuela.exe
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\DemoEscuela.pdb
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\EntityFramework.dll
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\EntityFramework.xml
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.csprojAssemblyReference.cache
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.firmAlumno.resources
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.Properties.Resources.resources
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.csproj.GenerateResource.cache
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.csproj.CoreCompileInputs.cache
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.csproj.CopyComplete
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.exe
+C:\Users\windows.10\source\repos\DemoEscuela\DemoEscuela\obj\Debug\DemoEscuela.pdb
