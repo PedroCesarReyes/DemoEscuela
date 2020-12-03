@@ -20,7 +20,7 @@ namespace DemoEscuela
 
         private void firmAlumno_Load(object sender, EventArgs e)
         {
-
+            LlenarGrid();
         }
 
         private void label3_Click(object sender, EventArgs e)
@@ -168,12 +168,90 @@ namespace DemoEscuela
                         textBoxNombre.Text = buscar.Nombre;
                         textBoxApellidoPaterno.Text = buscar.ApellidoPaterno;
                         textBoxApellidoMaterno.Text = buscar.ApellidoMaterno;
+                        textBoxRutaImagen.Text = buscar.Fotografía;
                         pictureBoxFotografia.Image = Image.FromFile(buscar.Fotografía);
                     }
                     else
                     {
                         LimpiarTextos();
                         MessageBox.Show("No se encontro el registro");
+                        
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrio un error: " + ex.ToString());
+            }
+        }
+
+        private void buttonEliminar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(textBoxIdAlumno.Text != string.Empty)
+                {
+                    int clave = int.Parse(textBoxIdAlumno.Text);
+
+                    contexto = new EscuelaDBEntities();
+
+                    Alumno eliminar = (from a in contexto.Alumnoes
+                                       where a.Id == clave
+                                       select a).SingleOrDefault();
+
+                    if (eliminar != null)
+                    {
+                        //Preguntar si se va eliminar
+                        contexto.Alumnoes.Remove(eliminar);
+                        contexto.SaveChanges();
+                        MessageBox.Show("Registro Eliminado");
+                        LlenarGrid();
+
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontro el registro");
+                
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show("Ocurrio un error: " + ex.ToString());
+            }
+        }
+
+        private void buttonActualizar_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                if(textBoxIdAlumno.Text != string.Empty)
+                {
+                    int clave = int.Parse(textBoxIdAlumno.Text);
+
+                    contexto = new EscuelaDBEntities();
+
+                    Alumno actualizar = (from a in contexto.Alumnoes
+                                         where a.Id == clave
+                                         select a).SingleOrDefault();
+                    if (actualizar != null)
+                    {
+                        actualizar.Nombre = textBoxNombre.Text;
+                        actualizar.ApellidoPaterno = textBoxApellidoPaterno.Text;
+                        actualizar.ApellidoMaterno = textBoxApellidoMaterno.Text;
+                        actualizar.Fotografía = textBoxRutaImagen.Text; 
+               
+                        contexto.SaveChanges();
+                        MessageBox.Show("Registro Actualizado");
+                        LimpiarTextos();
+                        LlenarGrid();
+                    }
+                    else
+                    {
+                        MessageBox.Show("No se encontro el registro");
+                 
                     }
                 }
             }
